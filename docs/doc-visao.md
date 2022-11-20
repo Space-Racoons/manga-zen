@@ -51,3 +51,4 @@ RNF001 - Deve ser acessível via navegador| O sistema deve abrir perfeitamente n
 RNF002 - Três idiomas| O sistema deve oferecer os mangás em 3 idiomas(português, inglês e japonês)|
 RNF003 - Conexão com Banco de Dados| O sistema deve ter uma conexão com o banco de dados.|
 RNF004 - Responsividade| O sistema deve se adaptar a outros dispositivos.|
+RNF005 - Salvar os mangás no banco de dados| O sistema deve salvar o mangás e os seus capítulos em um banco de dados de forma automática|
