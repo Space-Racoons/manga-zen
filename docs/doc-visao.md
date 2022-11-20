@@ -33,6 +33,8 @@ O sistema poderá ser usado por três tipos de usuário.
 
 * Usuário visitante: Esse usuário se trata do usuário que não tem uma conta no sistema. Ele poderá somente ler os mangás disponiveis no site. Caso queira comentar e criar sua coleção de mangás, terá que fazer um cadastro no sistema.
 
+# Requisitos funcionais
+
 Requisito| Descrição   | Ator |
 ---------| ----------- | ---------- |
 RF001 - Adicionar comentário | O usuário poderá adicionar um comentário á um mangá ou capítulo. | Usuário normal e Usuário Admin
@@ -41,3 +43,11 @@ RF003 - Visualizar comentário | O usuário poderá ver os comentários do mang�
 RF004 - Deletar comentário | O usuário poderá deleter o seu comentário em um mangá ou capítulo. | Usuário normal e Usuário Admin 
 RF005 - Visualizar mangá | O usuário poderá vizualizar o mangá e as suas informações.| Usuário normal, Usuário Admin e Usuário visitante
 RF006 - Ler capítulo | O usuário poderá ler os capítulos do mangá. | Usuário normal, Usuário Admin e Usuário visitante
+
+# Requisitos não funcionais 
+Requisitos| Descrição|
+----------| ---------|
+RNF001 - Deve ser acessível via navegador| O sistema deve abrir perfeitamente nos navegadores web Chrome,Firefox entre outros.|
+RNF002 - Três idiomas| O sistema deve oferecer os mangás em 3 idiomas(português, inglês e japonês)|
+RNF003 - Conexão com Banco de Dados| O sistema deve ter uma conexão com o banco de dados.|
+RNF004 - Responsividade| O sistema deve se adaptar a outros dispositivos.|
