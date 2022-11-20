@@ -32,3 +32,12 @@ O sistema poderá ser usado por três tipos de usuário.
 * Usuário normal: Esse usuário poderá adicionar comentário nos mangás e nos capítulos. Também terá o direito de criar a sua coleção com os seus mangá favoritos.
 
 * Usuário visitante: Esse usuário se trata do usuário que não tem uma conta no sistema. Ele poderá somente ler os mangás disponiveis no site. Caso queira comentar e criar sua coleção de mangás, terá que fazer um cadastro no sistema.
+
+Requisito| Descrição   | Ator |
+---------| ----------- | ---------- |
+RF001 - Adicionar comentário | O usuário poderá adicionar um comentário á um mangá ou capítulo. | Usuário normal e Usuário Admin
+RF002 - Editar comentário | O usuário poderá editar o seu comentário em um mangá ou capítulo. | Usuário normal e Usuário Admin
+RF003 - Visualizar comentário | O usuário poderá ver os comentários do mangá ou capítulo. | Usuário normal, Usuário Admin e Usuário visitante
+RF004 - Deletar comentário | O usuário poderá deleter o seu comentário em um mangá ou capítulo. | Usuário normal e Usuário Admin 
+RF005 - Visualizar mangá | O usuário poderá vizualizar o mangá e as suas informações.| Usuário normal, Usuário Admin e Usuário visitante
+RF006 - Ler capítulo | O usuário poderá ler os capítulos do mangá. | Usuário normal, Usuário Admin e Usuário visitante
