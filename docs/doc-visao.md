@@ -37,12 +37,18 @@ O sistema poderá ser usado por três tipos de usuário.
 
 Requisito| Descrição   | Ator |
 ---------| ----------- | ---------- |
-RF001 - Adicionar comentário | O usuário poderá adicionar um comentário á um mangá ou capítulo. | Usuário normal e Usuário Admin
+RF001 - Adicionar comentário | O usuário poderá adicionar um comentário á um mangá ou capítulo.Informações como Conteudo, data_criacao | Usuário normal e Usuário Admin
 RF002 - Editar comentário | O usuário poderá editar o seu comentário em um mangá ou capítulo. | Usuário normal e Usuário Admin
 RF003 - Visualizar comentário | O usuário poderá ver os comentários do mangá ou capítulo. | Usuário normal, Usuário Admin e Usuário visitante
-RF004 - Deletar comentário | O usuário poderá deleter o seu comentário em um mangá ou capítulo. | Usuário normal e Usuário Admin 
+RF004 - Deletar comentário | O usuário poderá deleter de maneira lógica o seu comentário em um mangá ou capítulo. | Usuário normal e Usuário Admin 
 RF005 - Visualizar mangá | O usuário poderá vizualizar o mangá e as suas informações.| Usuário normal, Usuário Admin e Usuário visitante
-RF006 - Ler capítulo | O usuário poderá ler os capítulos do mangá. | Usuário normal, Usuário Admin e Usuário visitante
+RF005 - Adicionar mangá | O usuário poderá Adicionar o mangá e as suas informações.Informações Título, Descrição, Views, Autor, status| Usuário normal, Usuário Admin e Usuário visitante
+RF005 - Editar mangá | O usuário poderá Editar o mangá e as suas informações.| Usuário normal, Usuário Admin e Usuário visitante
+RF005 - Deletar mangá | O usuário poderá Deletar de maneira lógica o mangá e as suas informações.| Usuário normal, Usuário Admin e Usuário visitante
+RF006 - Visualizar capítulo | O usuário poderá Visualizar os capítulos do mangá. | Usuário normal, Usuário Admin e Usuário visitante
+RF006 - Adicionar capítulo | O usuário poderá Adicionar os capítulos do mangá.Informações imagem, nome | Usuário normal, Usuário Admin e Usuário visitante
+RF006 - Editar capítulo | O usuário poderá Editar os capítulos do mangá. | Usuário normal, Usuário Admin e Usuário visitante
+RF006 - Deletar capítulo | O usuário poderá Deletar de maneira lógica os capítulos do mangá. | Usuário normal, Usuário Admin e Usuário visitante
 
 # Requisitos não funcionais 
 Requisitos| Descrição|
