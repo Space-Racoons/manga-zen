@@ -9,8 +9,7 @@ erDiagram
     MANGA ||--|{ CHAPTER : has
     MANGA ||--o{ COMMENT : has
     CHAPTER ||--o{ COMMENT : has
-    GENRE |{--o{ GENRE_MANGA: has
-    MANGA ||--o{ GENRE_MANGA : has
+    GENRE |{--o{  MANGA: has
 
     USER {
         INT id
@@ -39,6 +38,7 @@ erDiagram
         DATE date_created
         VARCHAR  url
         INT id_user
+        INT id_genre
     }
 
     CHAPTER{
@@ -55,9 +55,4 @@ erDiagram
         DATE date_created
     }
 
-    GENRE_MANGA{
-        INT id
-        INT id_genre
-        INT id_manga
-    }
 ```
