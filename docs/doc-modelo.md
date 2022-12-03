@@ -43,7 +43,7 @@ erDiagram
 
     CHAPTER{
         INT id
-        INT  number_chapter
+        INT  chapter_number
         VARCHAR  image
         DATE date_created
         INT id_manga
