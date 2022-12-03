@@ -9,6 +9,8 @@ erDiagram
     MANGA ||--|{ CHAPTER : has
     MANGA ||--o{ COMMENT : has
     CHAPTER ||--o{ COMMENT : has
+    GENRE |{--o{ GENRE_MANGA: has
+    MANGA ||--o{ GENRE_MANGA : has
 
     USER {
         INT id
@@ -16,6 +18,7 @@ erDiagram
         VARCHAR  email
         VARCHAR  password
         VARCHAR  image
+        DATE date_created
     }
 
     COMMENT{
@@ -30,18 +33,31 @@ erDiagram
      MANGA{
         INT id
         VARCHAR  author
-        VARCHAR  genre
         VARCHAR  status
         INT      views
         VARCHAR  description
+        DATE date_created
         VARCHAR  url
         INT id_user
     }
 
     CHAPTER{
         INT id
-        VARCHAR  name
+        INT  number_chapter
         VARCHAR  image
+        DATE date_created
+        INT id_manga
+    }
+
+    GENRE{
+        INT id
+        VARCHAR name_genre
+        DATE date_created
+    }
+
+    GENRE_MANGA{
+        INT id
+        INT id_genre
         INT id_manga
     }
 ```
