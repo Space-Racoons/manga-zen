@@ -29,6 +29,7 @@ erDiagram
 
     MANGA{
         INT id
+        VARCHAR title
         VARCHAR author
         INT views
         VARCHAR description
