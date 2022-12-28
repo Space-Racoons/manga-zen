@@ -12,7 +12,7 @@ erDiagram
     GENRE |{--o{  MANGA: has
     STATUS ||--o{ MANGA: has
 
-    USER {
+    USER{
         INT id
         VARCHAR  username
         VARCHAR  email
@@ -24,9 +24,6 @@ erDiagram
     COMMENT{
         INT id
         VARCHAR content
-        INT id_user
-        INT id_chapter
-        INT id_manga
         DATE created_at
     }
 
@@ -36,24 +33,19 @@ erDiagram
         INT views
         VARCHAR description
         VARCHAR url
-        INT id_user
-        INT id_status
-        INT id_status
         DATE created_at
     }
 
     CHAPTER{
         INT id
-        INT  ch_number
+        INT ch_number
         VARCHAR image_url
-        INT id_manga
         DATE created_at
     }
 
     GENRE{
         INT id
         VARCHAR name
-        INT manga_id
         DATE date_created
     }
 
