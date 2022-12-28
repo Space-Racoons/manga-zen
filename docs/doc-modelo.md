@@ -1,6 +1,6 @@
 # Modelo de Dados
 
-### Modelo Entidade-Relacionamento (MER)
+### Modelo Entidade-Relacionamento
 
 ```mermaid
 erDiagram
