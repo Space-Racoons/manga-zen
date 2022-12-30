@@ -1,0 +1,10 @@
+{% if latest_manga_list %}
+    <ul>
+        {% for manga in latest_manga_list %}
+        <li><a href="{% url 'read_manga' manga.id %}">{{manga.title}}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Nothing to see here yet!</p>
+{% endif %}
+<a href="{% url 'create_manga' %}">Insert manga</a>

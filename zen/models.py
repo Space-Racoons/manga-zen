@@ -18,11 +18,11 @@ class Status(models.Model):
 
 
 class Manga(models.Model):
-    user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
-    status = models.ForeignKey(Status, on_delete=models.DO_NOTHING)
+    user = models.ForeignKey(User, on_delete=models.DO_NOTHING, null=True)
+    status = models.ForeignKey(Status, on_delete=models.DO_NOTHING, null=True)
     title = models.CharField(max_length=300)
     author = models.CharField(max_length=300)
-    views = models.IntegerField()
+    views = models.IntegerField(default=0)
     description = models.CharField(max_length=3000)
     url = models.CharField(max_length=500)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -53,8 +53,8 @@ class Chapter(models.Model):
 class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     chapter = models.ForeignKey(Chapter, on_delete=models.CASCADE)
-    manga = models.ForeignKey(Manga, on_delete=models.CASCADE)
-    content = models.CharField(max_length=2000)
+    manga = models.ForeignKey(Manga, on_delete=models.CASCADE, null=True)
+    content = models.CharField(max_length=2000, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
